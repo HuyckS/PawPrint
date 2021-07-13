@@ -1,6 +1,8 @@
 import { Link, navigate } from "@reach/router";
 import { useState } from "react";
-import { styles } from '../sass/main.scss';
+import NavMenu from "../components/NavMenu";
+import Header from "../components/Header";
+import '../sass/main.scss';
 import logo from '../static/images/PawPrintLogo.jpg';
 
 const Home = () => {
@@ -14,9 +16,8 @@ const Home = () => {
 
     return (
         <div>
-            <div>
-                <img src={logo} alt="Logo" />
-            </div>
+            <NavMenu />
+            <Header />
             <section>
                 <div>
                     <button>Login</button>

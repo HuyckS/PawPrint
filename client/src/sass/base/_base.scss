@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+
 *,
 *::after,
 *::before {
@@ -12,10 +14,11 @@ html {
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Work Sans", "Lucida Sans", "Lucida Sans Regular",
+    "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-weight: 400;
   line-height: 1.7;
-  color: $color-dark;
+  color: $color-grey-dark-3;
   background-color: $color-white;
   padding: 3rem;
   box-sizing: border-box;

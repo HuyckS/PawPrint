@@ -1,26 +1,41 @@
 // COLORS
-$color-light-green: #9aecdb;
+$color-green-light: #9aecdb;
 $color-green: #55e6c1;
-$color-dark-green: #58b19f;
+$color-green-dark: #58b19f;
 
-$color-light-purple: #d6a2e8;
+$color-purple-light: #d6a2e8;
 $color-purple: #82589f;
-$color-dark-purple: #3b3b98;
+$color-purple-dark: #3b3b98;
 
-$color-light-blue: #25ccf7;
+$color-blue-light: #25ccf7;
 $color-blue: #1b9cfc;
-$color-dark-blue: #182c61;
+$color-blue-dark: #5643fa;
 
-$color-light-pink: #fc427b;
+$color-pink-light: #fc427b;
 $color-pink: #b33771;
-$color-dark-pink: #6d214f;
+$color-pink-dark: #6d214f;
 
-$color-light-orange: #fea47f;
+$color-orange-light: #fea47f;
 $color-orange: #f97f51;
 
-$color-light-yellow: #f8efba;
+$color-yellow-light: #f8efba;
 $color-yellow: #eab543;
 
+$color-grey-light-1: #f7f7f7;
+$color-grey-light-2: #eee;
+
+$color-grey-dark: #777;
+$color-grey-dark-2: #999;
+$color-grey-dark-3: #333;
+
 $color-white: #fff;
-$color-grey: #cad3c8;
-$color-dark: #2c3a47;
+$color-black: #000;
+
+//FONT
+$default-font-size: 1.6rem;
+
+// GRID
+$grid-width: 114rem;
+$gutter-vertical: 8rem;
+$gutter-vertical-small: 6rem;
+$gutter-horizontal: 6rem;

@@ -1,8 +1,8 @@
 import { Link, navigate } from "@reach/router";
 import { useState } from "react";
-import { styles } from '../sass/main.scss';
+import '../sass/main.scss';
 import logo from '../static/images/PawPrintLogo.jpg';
-import Navbar from "../components/Navbar";
+import NavMenu from "../components/NavMenu";
 
 const Dashboard = () => {
 
@@ -12,7 +12,7 @@ const Dashboard = () => {
         <div>
             <div>
                 <img src={logo} alt="logo" />
-                <Navbar />
+                <NavMenu />
             </div>
 
         </div>
