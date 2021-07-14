@@ -2,7 +2,12 @@ import { Link, navigate } from "@reach/router";
 import { useState } from "react";
 import NavMenu from "../components/NavMenu";
 import Header from "../components/Header";
+import FeaturesBox from "../components/FeaturesBox";
+import Footer from "../components/Footer";
 import '../sass/main.scss';
+import bird from "../static/images/green-bird.jpg";
+import puppy from "../static/images/red-dog.jpg";
+import cat from "../static/images/yellow-cat.jpg";
 import logo from '../static/images/PawPrintLogo.jpg';
 
 const Home = () => {
@@ -18,61 +23,74 @@ const Home = () => {
         <div>
             <NavMenu />
             <Header />
-            <section>
-                <div>
-                    <button>Login</button>
-                    <form action="/login" method="post">
-                        <label>Username:</label>
-                        <input type="text" onChange={(e) => { setUsername(e.target.value) }} />
-                        <label>Password:</label>
-                        <input type="text" onChange={(e) => { setPassword(e.target.value) }} />
-                        <input type="submit" value="Sign In" />
-                    </form>
+            <section className="section-about">
+                <div className="about-background u-center-text u-margin-bottom-big">
+                    <h2 className="heading-secondary">
+                        Organize the care for your pet and connect with your community!
+                    </h2>
                 </div>
-                <div>
-                    <button>Register</button>
-                    <form action="/register" method="post">
-                        <label>First Name:</label>
-                        <input type="text" onChange={(e) => { setFirstName(e.target.value) }} />
-                        <label>Last Name:</label>
-                        <input type="text" onChange={(e) => { setLastName(e.target.value) }} />
-                        <label>Email:</label>
-                        <input type="text" onChange={(e) => { setEmail(e.target.value) }} />
-                        <label>Phone:</label>
-                        <input type="text" onChange={(e) => { setPhone(e.target.value) }} />
-                        <label>Username:</label>
-                        <input type="text" onChange={(e) => { setUsername(e.target.value) }} />
-                        <label>Password:</label>
-                        <input type="text" onChange={(e) => { setPassword(e.target.value) }} />
-                        <label>Confirm Password:</label>
-                        <input type="text" onChange={(e) => { setConfirm(e.target.value) }} />
-                        <input type="submit" value="Join" />
-                    </form>
+                <div className="row">
+                    <div className="summary">
+                        <img
+                            src={bird}
+                            alt="bird"
+                            className="summary__photo summary__photo--p1"
+                        />
+                        <img
+                            src={puppy}
+                            alt="puppy"
+                            className="summary__photo summary__photo--p2"
+                        />
+                        <img
+                            src={cat}
+                            alt="cat"
+                            className="summary__photo summary__photo--p3"
+                        />
+                    </div>
                 </div>
+                <div className="row u-margin-top-huge">
+                    <div className="col-1-of-3 u-border-right">
+                        <h3 className="heading-tertiary u-margin-bottom-small">
+                            Records & Reminders
+                        </h3>
+                        <p className="paragraph">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, quis
+                            repellat. Nobis corrupti ipsa explicabo animi provident.
+                            Temporibus vero fugiat aliquid eaque. Veritatis optio, culpa
+                            facere velit quae cum! Totam!
+                        </p>
+                    </div>
+                    <div className="col-1-of-3 u-border-right">
+                        <h3 className="heading-tertiary u-margin-bottom-small">
+                            Connect with your community
+                        </h3>
+                        <p className="paragraph">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, quis
+                            repellat. Nobis corrupti ipsa explicabo animi provident.
+                            Temporibus vero fugiat aliquid eaque. Veritatis optio, culpa
+                            facere velit quae cum! Totam!
+                        </p>
+                    </div>
+                    <div className="col-1-of-3">
+                        <h3 className="heading-tertiary u-margin-bottom-small">
+                            Access veterinarian services
+                        </h3>
+                        <p className="paragraph">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, quis
+                            repellat. Nobis corrupti ipsa explicabo animi provident.
+                            Temporibus vero fugiat aliquid eaque. Veritatis optio, culpa
+                            facere velit quae cum! Totam!
+                        </p>
+                    </div>
+                </div>
+                <div className="row">
+                    <a href="#" className="btn-text">Learn more &rarr;</a>
+                </div>
+
             </section>
-            <section>
-                <div>
-                    <h2>Organize</h2>
-                    <p>Helps you keep track of your pets with notifications on feeding, giving medicine, appointments... anything they might need.</p>
-                </div>
-                <div>
-                    <h2>Share</h2>
-                    <p>Need help watching your pet? Develop contacts with various pet organizations, friends, and family to be able to chat and stay connected about your pets while you are away.</p>
-                </div>
-                <div>
-                    <h2>Care</h2>
-                    <p>Get access to local emergency vet locations and helpful numbers to contact in the event of an emergency. Also include a live chat with a veterinarian.</p>
-                </div>
-                <div>
-                    <h2>Donate</h2>
-                    <p>Donate to a non-profit, pet friendly cause in your pet's name - whether celebrating their birthday, their life, or on a regular day; you and your pet can help others in need.</p>
-                </div>
-                <div>
-                    <h2>Accessorize</h2>
-                    <p>Find local and popular sites selling the best training gear, food, and accessories for your pet.</p>
-                </div>
-            </section>
-        </div>
+            <FeaturesBox />
+            <Footer />
+        </div >
     )
 }
 

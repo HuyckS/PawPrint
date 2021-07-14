@@ -3,7 +3,14 @@
 
 @import "base/base";
 @import "base/typography";
+@import "base/utilities";
 
+@import "components/summary";
+@import "components/feature-box";
+
+@import "layouts/footer";
 @import "layouts/grid";
 @import "layouts/header";
 @import "layouts/navigation";
+
+@import "pages/home";

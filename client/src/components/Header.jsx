@@ -2,7 +2,7 @@ import React from "react";
 import '../sass/main.scss';
 
 
-const NavMenu = () => {
+const Header = () => {
 
 
     return (
@@ -23,4 +23,4 @@ const NavMenu = () => {
     )
 }
 
-export default NavMenu;
+export default Header;

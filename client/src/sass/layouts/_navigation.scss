@@ -24,7 +24,7 @@
     position: fixed;
     top: 6.5rem;
     right: 6.5rem;
-    background-image: radial-gradient($color-blue-light, $color-blue);
+    background-image: radial-gradient($color-blue-dark, $color-purple-dark);
     z-index: 1000;
     transition: transform 0.8s cubic-bezier(0.83, 0, 0.17, 1);
   }
@@ -107,11 +107,11 @@
     height: 3.5rem;
     width: 3.5rem;
     font-size: 3rem;
-    color: transparent;
+    color: $color-black;
     background-image: linear-gradient(
       right to bottom,
-      $color-blue-light,
-      $color-blue
+      $color-blue,
+      $color-purple-dark
     );
   }
 }
