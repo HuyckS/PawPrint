@@ -115,3 +115,26 @@
     );
   }
 }
+
+.logo-nav {
+  width: 80%;
+  border: 1px solid $color-black;
+
+  &__box {
+  }
+
+  &__icon {
+    position: relative;
+    margin-top: 1.5rem;
+    display: inline-block;
+    height: 3.5rem;
+    width: 3.5rem;
+    font-size: 3rem;
+    color: $color-black;
+    background-image: linear-gradient(
+      right to bottom,
+      $color-blue,
+      $color-purple-dark
+    );
+  }
+}
