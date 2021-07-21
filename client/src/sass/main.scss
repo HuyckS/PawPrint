@@ -5,13 +5,16 @@
 @import "base/typography";
 @import "base/utilities";
 
+@import "components/bg-video";
 @import "components/feature-box";
 @import "components/logo-nav";
+@import "components/profiles";
 @import "components/summary";
 
 @import "layouts/footer";
 @import "layouts/grid";
 @import "layouts/header";
+@import "layouts/header2";
 @import "layouts/navigation";
 
 @import "pages/home";

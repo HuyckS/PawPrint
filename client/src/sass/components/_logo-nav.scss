@@ -17,7 +17,8 @@
     transition: all 0.3s;
     &:hover,
     &:active {
-      background-color: $color-yellow-light;
+      background-color: $color-blue-dark;
+      color: $color-white;
       transform: scale(1.05) translateY(-0.5rem);
       box-shadow: 0 2.5rem 4rem rgba($color-black, 0.5);
       z-index: 20;

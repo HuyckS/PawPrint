@@ -15,6 +15,11 @@
     box-shadow: 0 1rem 3rem rgba($color-black, 0.1);
     text-align: center;
     cursor: pointer;
+    transition: all 0.4s;
+    &:active,
+    &:hover {
+      transform: scale(1.3);
+    }
   }
 
   &__background {
@@ -113,5 +118,9 @@
       $color-blue,
       $color-purple-dark
     );
+
+    &--pic {
+      width: 100%;
+    }
   }
 }

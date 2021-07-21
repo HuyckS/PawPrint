@@ -1,5 +1,6 @@
 import React from "react";
 import '../sass/main.scss';
+import logo2 from "../static/images/PawPrintLogo2.png";
 
 const NavMenu = () => {
 
@@ -9,7 +10,7 @@ const NavMenu = () => {
             <div className="navigation">
                 <input type="checkbox" className="navigation__checkbox" id="navi-toggle" />
                 <label htmlFor="navi-toggle" className="navigation__button">
-                    <span className="navigation__icon">&#128062;</span>
+                    <span className="navigation__icon"><img src={logo2} alt="two paw prints" className="navigation__icon--pic" /></span>
                 </label>
                 <div className="navigation__background">&nbsp;</div>
                 <nav className="navigation__nav">

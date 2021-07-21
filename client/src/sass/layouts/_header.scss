@@ -1,14 +1,16 @@
 .header {
   height: 95vh;
-  background-image: linear-gradient(
-    to right bottom,
-    rgba($color-blue-light, 0.8),
-    rgba($color-blue, 0.8)
-  );
+  // background-image: linear-gradient(
+  //   to right bottom,
+  //   rgba($color-blue-light, 0.8),
+  //   rgba($color-blue, 0.8)
+  // );
   background-size: cover;
-  position: relative;
+  // position: relative;
   // -webkit-clip-path: polygon(0 0, 100% 0%, 100% 85vh, 0 100%);
   // clip-path: polygon(0 0, 100% 0%, 100% 85vh, 0 100%);
+  background-color: $color-blue-light;
+  position: relative;
 
   &__text-box {
     position: absolute;
@@ -16,25 +18,5 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-  }
-}
-
-.header2 {
-  display: inline-block;
-  &__logo-box {
-    left: 0;
-  }
-
-  &__nav {
-    left: 50%;
-    display: inline-block;
-    &__box {
-      display: block;
-      text-decoration: none;
-    }
-    &__text {
-      font-size: 2rem;
-      font-weight: bolder;
-    }
   }
 }
