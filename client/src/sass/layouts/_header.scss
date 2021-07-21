@@ -18,3 +18,23 @@
     text-align: center;
   }
 }
+
+.header2 {
+  display: inline-block;
+  &__logo-box {
+    left: 0;
+  }
+
+  &__nav {
+    left: 50%;
+    display: inline-block;
+    &__box {
+      display: block;
+      text-decoration: none;
+    }
+    &__text {
+      font-size: 2rem;
+      font-weight: bolder;
+    }
+  }
+}

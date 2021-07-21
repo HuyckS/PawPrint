@@ -5,8 +5,9 @@
 @import "base/typography";
 @import "base/utilities";
 
-@import "components/summary";
 @import "components/feature-box";
+@import "components/logo-nav";
+@import "components/summary";
 
 @import "layouts/footer";
 @import "layouts/grid";
@@ -14,3 +15,4 @@
 @import "layouts/navigation";
 
 @import "pages/home";
+@import "pages/dashboard";

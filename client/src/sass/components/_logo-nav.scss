@@ -1,0 +1,35 @@
+.logo-nav {
+  position: fixed;
+  bottom: 0;
+  padding: 0.5rem;
+  width: 97%;
+  z-index: 300;
+  background-color: $color-white;
+
+  &__box {
+    display: inline-block;
+    background-color: $color-white;
+    border: 1px solid $color-grey-dark-2;
+    width: 20%;
+    padding: 2rem;
+    align-content: center;
+    border-radius: 3px;
+    transition: all 0.3s;
+    &:hover,
+    &:active {
+      background-color: $color-yellow-light;
+      transform: scale(1.05) translateY(-0.5rem);
+      box-shadow: 0 2.5rem 4rem rgba($color-black, 0.5);
+      z-index: 20;
+    }
+  }
+
+  &__icon {
+    display: block;
+    height: 5.5rem;
+    width: 5.5rem;
+    font-size: 1.5rem;
+    color: $color-black;
+    margin: auto;
+  }
+}
