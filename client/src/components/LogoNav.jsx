@@ -18,10 +18,10 @@ const LogoNav = () => {
                     <Link to="/dashboard"><img src={home} alt="home" className="logo-nav__icon" /></Link>
                 </div>
                 <div className="logo-nav__box">
-                    <Link to="/chat"><img src={bell} alt="bell" className="logo-nav__icon" /></Link>
+                    <Link to="/notifications"><img src={bell} alt="bell" className="logo-nav__icon" /></Link>
                 </div>
                 <div className="logo-nav__box">
-                    <Link to="/notifications"><img src={chat} alt="bubble" className="logo-nav__icon" /></Link>
+                    <Link to="/chat"><img src={chat} alt="bubble" className="logo-nav__icon" /></Link>
                 </div>
                 <div className="logo-nav__box">
                     <Link to="/emergency"><img src={emergency} alt="cross" className="logo-nav__icon" /></Link>

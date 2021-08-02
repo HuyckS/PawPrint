@@ -3,58 +3,40 @@
     width: 100%;
     padding: 1.5rem;
     border-radius: 5px;
-    border: 0.5px solid $color-grey-light-2;
+    // border: 0.5px solid $color-blue-dark;
 
-    &--1 {
-      &:hover,
-      &:active {
-        background-image: linear-gradient(
-          to right bottom,
-          rgba($color-green-light, 0.8),
-          rgba($color-green-dark, 0.8)
-        );
-        transform: scale(0.99);
-        box-shadow: 0 2.5rem 4rem rgba($color-black, 0.5);
-        z-index: 20;
-        border: none;
-      }
-    }
+    // &--1 {
+    //   transform: scale(0.99);
+    //   box-shadow: 0 2.5rem 4rem rgba($color-black, 0.5);
+    //   z-index: 20;
+    //   border: none;
+    // }
 
-    &--2 {
-      &:hover,
-      &:active {
-        background-image: linear-gradient(
-          to right bottom,
-          rgba($color-blue-light, 0.8),
-          rgba($color-blue-dark, 0.8)
-        );
-        transform: scale(0.99);
-        box-shadow: 0 2.5rem 4rem rgba($color-black, 0.5);
-        z-index: 20;
-        border: none;
-      }
-    }
+    // &--2 {
+    //   transform: scale(0.99);
+    //   box-shadow: 0 2.5rem 4rem rgba($color-black, 0.5);
+    //   z-index: 20;
+    //   border: none;
+    // }
 
-    &--3 {
-      &:hover,
-      &:active {
-        background-image: linear-gradient(
-          to right bottom,
-          rgba($color-purple-light, 0.8),
-          rgba($color-purple, 0.8)
-        );
-        transform: scale(0.99);
-        box-shadow: 0 2.5rem 4rem rgba($color-black, 0.5);
-        z-index: 20;
-        border: none;
-      }
-    }
+    // &--3 {
+    //   transform: scale(0.99);
+    //   box-shadow: 0 2.5rem 4rem rgba($color-black, 0.5);
+    //   z-index: 20;
+    //   border: none;
+    // }
   }
 
   &__profile {
     display: inline-block;
     width: 20%;
     margin: 1.5rem;
+    transition: all 0.3s;
+
+    &:hover,
+    &:active {
+      transform: scale(1.3);
+    }
   }
 
   &__profile-shape {
@@ -81,6 +63,12 @@
     display: inline-block;
     width: 20%;
     padding: 1.5rem;
+    transition: all 0.3s;
+
+    &:hover,
+    &:active {
+      transform: scale(1.3);
+    }
   }
 
   &__friend-shape {
@@ -107,7 +95,14 @@
     display: inline-block;
     width: 20%;
     padding: 1.5rem;
+    transition: all 0.3s;
+
+    &:hover,
+    &:active {
+      transform: scale(1.3);
+    }
   }
+
   &__pet-shape {
     width: 11rem;
     height: 11rem;
